@@ -1,9 +1,14 @@
 import 'package:budgetapp/screen/welcomepage.dart';
+import 'package:budgetapp/signuppage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
     home: WelcomePage(),
+    routes: {
+      '/':(context) => WelcomePage(),
+      '/signup':(context) => SignUpPage(),
+    },
     
   ));
 }

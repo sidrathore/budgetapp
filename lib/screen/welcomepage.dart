@@ -11,6 +11,15 @@ class WelcomePage extends StatefulWidget {
 
 class Welcome extends State<WelcomePage> {
   @override
+  void initState() {
+    Future.delayed(
+      Duration(seconds: 3),
+      () => Navigator.pushNamed(context,'/signup'),
+    );
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
