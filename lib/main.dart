@@ -1,7 +1,11 @@
+import 'package:budgetapp/screen/welcomepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    home: WelcomePage(),
+    
+  ));
 }
 
 class MyApp extends StatelessWidget {
